@@ -8,14 +8,6 @@ Must use `uv` for managing the Python project.
 
 ## Common `uv` commands
 The followings are some examples for using uv:
-
-## Working Directory (CRITICAL)
-ALL commands MUST be executed from the project root directory
-(the directory containing `pyproject.toml` and `uv.lock`).
-
-Running `uv run ...` outside the project root is NOT allowed,
-as it may resolve to a different environment.
-
 ```bash
 # initialize project
 uv init
@@ -33,3 +25,13 @@ uv sync
 uv run python script.py
 uv run pytest
 ```
+
+## Working Directory (CRITICAL)
+ALL commands MUST be executed from the project root directory
+(the directory containing `pyproject.toml` and `uv.lock`).
+
+Running `uv run ...` outside the project root is NOT allowed,
+as it may resolve to a different environment.
+
+
+
